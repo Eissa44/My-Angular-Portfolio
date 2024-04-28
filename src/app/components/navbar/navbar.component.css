@@ -1,0 +1,74 @@
+/* START OF REGION SECTION NAV */
+#nav-bar {
+  background-color: var(--primary-text-light);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 80px;
+  transition: var(--transetion-time) linear;
+  z-index: 999;
+}
+
+#nav-bar.active {
+  width: 330px;
+}
+
+#nav-bar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: var(--transetion-time) linear;
+}
+
+#nav-bar.active ul {
+  width: 100%;
+}
+
+#nav-bar ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transetion-time) linear;
+}
+
+#nav-bar.active ul li {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateY(360deg);
+}
+
+#nav-bar ul a {
+  position: relative;
+  color: #303030;
+  margin: 0 12px;
+}
+
+#nav-btns {
+  border: 0 !important;
+  position: relative;
+}
+
+#des-tool {
+  transform: translateX(-50%);
+  bottom: -180% !important;
+  left: 50%;
+  white-space: nowrap;
+  background-color: #fff;
+  display: none;
+}
+
+#des-tool::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 80%;
+  transform: translateX(-50%) rotate(180deg);
+  border: 12px solid;
+  border-color: #fff #0000 #0000 #0000;
+}
+
+#nav-bar ul a:hover #des-tool {
+  display: block;
+}
+/* END OF REGION SECTION NAV */

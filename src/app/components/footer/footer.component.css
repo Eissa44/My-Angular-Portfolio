@@ -1,0 +1,13 @@
+svg path {
+  fill: var(--primary-text-light);
+  top: 50px !important;
+}
+
+#foot {
+  background-color: var(--primary-text-light);
+}
+
+#foot .right-content,
+#foot .left-content {
+  color: #303030;
+}

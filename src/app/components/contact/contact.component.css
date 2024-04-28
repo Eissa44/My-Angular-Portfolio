@@ -1,0 +1,97 @@
+/* START OF REGION CONTACT */
+#contact .contact-p {
+  text-wrap: balance;
+}
+
+#contact .form-title::after {
+  content: "....";
+  bottom: -2rem;
+  position: absolute;
+  left: -0.01rem;
+  font-family: "Kalam", cursive;
+  color: var(--primary-text-light);
+  font-size: 3.5rem;
+  transition: var(--transetion-time);
+}
+
+.form-btn {
+  background-color: var(--primary-text-light);
+  color: #303030 !important;
+  transition: var(--transetion-time);
+  width: fit-content;
+}
+
+.form-btn:hover {
+  background-color: var(--hovering-light);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem var(--primary-text-light) !important;
+  border-color: initial !important;
+}
+/* END OF REGION CONTACT */
+
+/* START OF MEDIA QUERY */
+@media (max-width: 360px) {
+  .main-section-head h2 {
+    font-size: 2rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 576px) {
+  .contact-p {
+    width: 100% !important;
+  }
+
+  .main-section-head h2 {
+    font-size: 3rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-section-head {
+    margin-top: 6.5rem;
+  }
+  .contact-p {
+    width: 100% !important;
+  }
+
+  .main-section-head h2 {
+    font-size: 4rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-section-head {
+    margin-top: 6.5rem;
+  }
+
+  .contact-p {
+    width: 100% !important;
+  }
+
+  .main-section-head h2 {
+    font-size: 5.5rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 5rem;
+    width: 100%;
+  }
+}
+/* END OF MEDIA QUERY */

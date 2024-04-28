@@ -1,0 +1,54 @@
+<!-- START OF REGION SECTION NAV -->
+<nav
+  class="active rounded-4 fixed-top mt-2 d-flex justify-content-center align-items-center"
+  id="nav-bar"
+  #navBar
+>
+  <ul>
+    <li>
+      <a id="contact-link" routerLink="contact">
+        <i class="fa-solid fa-phone-volume fa-2x"></i>
+        <span id="des-tool" class="position-absolute px-2 rounded-2"
+          >Contact</span
+        >
+      </a>
+    </li>
+
+    <li>
+      <a id="port-link" routerLink="portfolio"
+        ><i class="fa-solid fa-envelope fa-2x"></i>
+        <span id="des-tool" class="position-absolute px-2 rounded-2"
+          >Portfolio</span
+        ></a
+      >
+    </li>
+
+    <li>
+      <a id="about-link" routerLink="about"
+        ><i class="fa-solid fa-user fa-2x"></i>
+        <span id="des-tool" class="position-absolute px-2 rounded-2"
+          >About</span
+        >
+      </a>
+    </li>
+
+    <li>
+      <a id="home-link" routerLink="home">
+        <i class="fa-solid fa-house-chimney fa-2x"></i>
+        <span id="des-tool" class="position-absolute px-2 rounded-2">Home</span>
+      </a>
+    </li>
+  </ul>
+
+  <button
+    class="btn d-flex justify-content-center align-items-center"
+    id="nav-btns"
+    (click)="closeBtn(navBar, open, close)"
+  >
+    <i id="close" class="fa-solid fa-xmark fa-2x" #close></i>
+    <i id="open" class="fa-solid fa-bars fa-2x d-none" #open></i>
+  </button>
+
+  <!-- <i class="fa-solid fa-phone bg-danger"></i> -->
+</nav>
+<!-- END OF REGION SECTION NAV -->

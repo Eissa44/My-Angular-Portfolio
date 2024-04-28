@@ -1,0 +1,11 @@
+/* START OF REGION MOOD SWITCHER */
+.mode-command {
+  background-color: var(--second-text-light);
+  color: #303030;
+  top: 25%;
+  right: 0;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border-right: solid 0.5px #303030;
+}
+/* END OF REGION MOOD SWITCHER */

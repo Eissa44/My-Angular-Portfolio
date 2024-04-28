@@ -1,0 +1,141 @@
+/* START OF REGION PORTFOLIO */
+#portfolio .portfolio-p {
+  text-wrap: balance;
+}
+
+.nav-pills {
+  background-color: var(--primary-text-light);
+  transition: var(--transetion-time);
+}
+
+.nav-pills .nav-link {
+  color: #303030 !important;
+  background-color: inherit !important;
+}
+
+#portfolio .shadow {
+  top: 110%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #33333367;
+  transition: all 0.8s;
+}
+
+#portfolio .img-item img {
+  transition: all 0.6s;
+}
+
+#portfolio .img-item:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+#portfolio .img-item:hover .shadow {
+  top: 0 !important;
+}
+
+#portfolio #close-info {
+  top: 1.2rem;
+  right: 2rem;
+  color: #333;
+  background: none;
+}
+
+#portfolio .project-info {
+  background-color: white;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 99999;
+  color: #303030 !important;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+}
+/* END OF REGION PORTFOLIO */
+
+/* START OF MEDIA QUERY */
+
+@media (max-width: 360px) {
+  /* .main-section-head {
+  margin: 2.2rem !important;
+} */
+
+  .main-section-head h2 {
+    font-size: 2rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 576px) {
+  .main-section-head {
+    margin-top: 6.5rem;
+  }
+
+  .main-section-head h2 {
+    font-size: 3rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .portfolio-p {
+    width: 100% !important;
+  }
+
+  .nav-pills {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-section-head {
+    margin-top: 6.5rem;
+  }
+
+  .main-section-head h2 {
+    font-size: 3.6rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 3.2rem;
+    width: 100%;
+  }
+
+  .portfolio-p {
+    width: 100% !important;
+  }
+
+  .nav-pills {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-section-head {
+    margin-top: 6.5rem;
+  }
+
+  .main-section-head h2 {
+    font-size: 5.5rem;
+  }
+
+  .main-section-head h3 {
+    font-size: 4.5rem;
+    width: 100%;
+  }
+
+  .portfolio-p {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 992px) {
+}
